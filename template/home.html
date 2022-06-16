@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <style>
+          body{
+        
+          }
+          h1{font-size: 40px;
+            color:rgb(165, 62, 14);
+            margin-top: 0px;
+          }
+          h3{
+            font-size: 30px;
+            color:blueviolet;
+            
+          }
+          form{
+            
+          }
+          .btn{
+             padding: 10px;
+             width: 100px;
+             font-size: 15px;
+          }
+          .enter{
+            padding: 5px;
+            
+            
+          }
+          h4{
+            font-size: 20px;
+          }
+        
+         
+        </style>
+        <center>
+    </head>
+    <center>
+    <body style="background-image:url(/static/background.png) ; background-repeat: no-repeat;min-width:400px; min-height: 100vh; background-size: 1330px 610px;background-position: center;">
+       
+            <br>
+           <br>
+           <br>
+           <br>
+           <br>
+<br>
+            <h3> Year of experience of an employee </h3>
+        <form action="{{url_for('predict')}}" method="post"  >
+              <h4>Enter : <input type="text" class="enter" name = "year" placeholder=" Year of experience" required="required" /></h4>
+              <button id="btn" type="submit" class="btn">Predict</button>
+        </form>
+        <img  src="/static/salarygraph.png" >
+    </center>
+    </body>
+
+</html>
